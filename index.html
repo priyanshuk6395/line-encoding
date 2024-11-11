@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Encoding Visualizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Line Encoding Schemes</h1>
+    <div class="container">
+        <form id="encodingForm">    
+        <label for="encoding">Choose an encoding scheme:</label>
+        <select id="encoding" name="encoding">
+            <option value="nrzI">NRZ-I</option>
+            <option value="nrzL">NRZ-L</option>
+            <option value="manchester">Manchester</option>
+            <option value="diffManchester">Differential Manchester</option>
+            <option value="ami">AMI</option>
+        </select>
+        <br><br>
+        
+        <label for="databits">Enter Data Bits:</label>
+        <input type="text" id="databits" name="databits" required>
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+    
+    <canvas id="chart"></canvas>
+    <script src="script.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+            <h2>About </h2>
+            <p>Created by Priyanshu Kumar</p>
+        </div>
+</footer>
+
+</html>
