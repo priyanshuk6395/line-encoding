@@ -88,7 +88,7 @@ function diffManchesterEncode(data) {
     let signal = [];
     let currentLevel = -1; // Assume starting level is low
     for (let bit of data) {
-        if (bit === 1) {
+        if (bit === 0) {
             signal.push(currentLevel, currentLevel * -1); // Transition at middle
         } else {
             currentLevel *= -1; // Flip level at beginning for '0'
