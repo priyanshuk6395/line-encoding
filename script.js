@@ -151,10 +151,20 @@ function amiEncode(data, scramblingType) {
 
                 if (onecount % 2 === 0) {
                     // Even parity: Insert violation bit with alternating polarity
-                    signal.push(check(lastPositive, -1, 1), 0, 0, check(lastPositive, -1, 1));
+                    // signal.push(check(lastPositive, -1, 1), 0, 0, check(lastPositive, -1, 1));
+                    if(lastPositive === -1){
+                        signal.push(1,0,0,1);
+                    }else{
+                        signal.push(-1,0,0,-1);
+                    }
                 } else {
                     // Odd parity: Insert violation bit with alternating polarity
-                    signal.push(0, 0, 0, check(lastPositive, -1, 1));
+                    // signal.push(0, 0, 0, check(lastPositive, -1, 1));
+                    if(lastPositive === -1){
+                        signal.push(0,0,0,-1);
+                    }else{
+                        signal.push(0,0,0,1);
+                    }
                 }
 
                 // Increment the '1' bit count (2 new violation bits added)
