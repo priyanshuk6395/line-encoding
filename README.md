@@ -18,11 +18,11 @@ This project is an interactive tool to visualize various line encoding schemes, 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/line-encoding-visualization.git
+   https://github.com/priyanshuk6395/line-encoding.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd line-encoding-visualization
+   cd line-encoding
    ```
 3. Open the `index.html` file in your browser to run the application.
 
